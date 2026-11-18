@@ -5,8 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Yazıcıoğlu Lake & Cila | Ankara Mobilya Boyama</title>
-<meta name="description" content="Ankara Siteler kapı boyama, mutfak dolabı boyama, lake boya, mobilya yenileme ve cila ustası.">
-<meta name="keywords" content="Ankara kapı boyama, mutfak boyama, mobilya boyama, lake boya, mobilya cila, kapı yenileme, Siteler mobilya ustası">
+<meta name="description" content="Ankara Siteler ve Altındağ'da kapı boyama, mutfak dolabı boyama, lake boya, mobilya yenileme ve cila hizmetleri.">
+<meta name="keywords" content="Ankara kapı boyama, mutfak dolabı boyama, mobilya boyama, lake boya, mobilya cila, kapı yenileme, Siteler mobilya ustası">
 <style>
 *{box-sizing:border-box}
 body{margin:0;font-family:Arial,sans-serif;background:#f5f1e8;color:#24352c}
@@ -28,7 +28,17 @@ h2{font:36px Georgia}
 .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
 .photo{height:210px;background:linear-gradient(145deg,#354b3c,#b19a73);display:flex;align-items:end;justify-content:center;color:white;font:23px Georgia;padding:20px}
 .contact{background:#17271f;color:white}
+.contact p{font-size:17px}
+.whatsapp-btn{background:#25D366;color:white}
+.call-btn{background:#d2b477;color:#17271f}
+.floating-whatsapp{position:fixed;bottom:20px;right:18px;background:#25D366;color:white;text-decoration:none;padding:15px 20px;border-radius:40px;font-weight:bold;box-shadow:0 3px 12px #0005;z-index:999}
 footer{background:#101a15;color:white;text-align:center;padding:20px}
+@media(max-width:600px){
+.hero{padding:65px 15px}
+.hero h2{font-size:35px}
+nav a{display:inline-block;margin:7px}
+section{padding:45px 5%}
+}
 </style>
 </head>
 <body>
@@ -77,10 +87,15 @@ footer{background:#101a15;color:white;text-align:center;padding:20px}
 </section>
 <section class="contact" id="iletisim">
 <h2>İletişim ve Adres</h2>
+<p>Telefon: 0541 549 45 99</p>
 <p>Önder Mah. Tezcan Cad. 5/12</p>
 <p>Altındağ / Ankara</p>
-<a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=%C3%96nder+Mahallesi+Tezcan+Caddesi+5%2F12+Alt%C4%B1nda%C4%9F+Ankara">Konumu Haritada Gör</a>
+<a class="btn call-btn" href="tel:+905415494599">Hemen Ara</a>
+<a class="btn whatsapp-btn" href="https://wa.me/905415494599" target="_blank" rel="noopener">WhatsApp'tan Yaz</a>
+<br>
+<a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%C3%96nder+Mahallesi+Tezcan+Caddesi+5%2F12+Alt%C4%B1nda%C4%9F+Ankara">Konumu Haritada Gör</a>
 </section>
+<a class="floating-whatsapp" href="https://wa.me/905415494599" target="_blank" rel="noopener">WhatsApp</a>
 <footer>© 2026 Yazıcıoğlu Lake & Cila</footer>
 </body>
 </html>
