@@ -26,7 +26,31 @@ h2{font:36px Georgia}
 .card h3{font:23px Georgia;color:#927345}
 .about{background:#e9e1d3}
 .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
-.photo{height:210px;background:linear-gradient(145deg,#354b3c,#b19a73);display:flex;align-items:end;justify-content:center;color:white;font:23px Georgia;padding:20px}
+.photo{
+height:260px;
+position:relative;
+overflow:hidden;
+display:flex;
+align-items:end;
+justify-content:center;
+padding:20px;
+color:white;
+font:23px Georgia;
+}
+.photo img{
+position:absolute;
+inset:0;
+width:100%;
+height:100%;
+object-fit:cover;
+}
+.photo span{
+position:relative;
+z-index:1;
+background:#17271fbb;
+padding:8px 14px;
+border-radius:5px;
+}
 .contact{background:#17271f;color:white}
 .contact p{font-size:17px}
 .whatsapp-btn{background:#25D366;color:white}
