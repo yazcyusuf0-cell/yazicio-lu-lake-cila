@@ -36,14 +36,21 @@ justify-content:center;
 padding:20px;
 color:white;
 font:23px Georgia;
+border-radius:7px;
 }
 .photo img{
 position:absolute;
-inset:0;
-width:100%;
-height:100%;
-object-fit:cover;
+width:300%;
+height:200%;
+max-width:none;
+object-fit:fill;
 }
+.photo:nth-child(1) img{left:0;top:0}
+.photo:nth-child(2) img{left:-100%;top:0}
+.photo:nth-child(3) img{left:-200%;top:0}
+.photo:nth-child(4) img{left:0;top:-100%}
+.photo:nth-child(5) img{left:-100%;top:-100%}
+.photo:nth-child(6) img{left:-200%;top:-100%}
 .photo span{
 position:relative;
 z-index:1;
@@ -107,7 +114,6 @@ section{padding:45px 5%}
 <div class="photo"><img src="file_00000000968481f4b070fde3f60b2b0b.png" alt="Yemek Odası"><span>Yemek Odası</span></div>
 <div class="photo"><img src="file_00000000968481f4b070fde3f60b2b0b.png" alt="Cila İşleri"><span>Cila İşleri</span></div>
 </div>
-<p>Bu alanlara gerçek iş fotoğraflarımızı ekleyeceğiz.</p>
 </section>
 <section class="contact" id="iletisim">
 <h2>İletişim ve Adres</h2>
