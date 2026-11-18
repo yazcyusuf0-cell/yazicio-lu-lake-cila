@@ -4,128 +4,654 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Yazıcıoğlu Lake & Cila | Ankara Mobilya Boyama</title>
-<meta name="description" content="Ankara Siteler ve Altındağ'da kapı boyama, mutfak dolabı boyama, lake boya, mobilya yenileme ve cila hizmetleri.">
-<meta name="keywords" content="Ankara kapı boyama, mutfak dolabı boyama, mobilya boyama, lake boya, mobilya cila, kapı yenileme, Siteler mobilya ustası">
+
+<meta name="description" content="Ankara Siteler ve Altındağ kapı boyama, mutfak dolabı boyama, lake boya, mobilya yenileme ve cila ustası.">
+<meta name="keywords" content="Ankara kapı boyama, mutfak boyama, mobilya boyama, lake boya, mobilya cila, Siteler mobilya ustası, kapı yenileme, mobilya yenileme">
+
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f5f1e8;color:#24352c}
-header{background:#17271f;color:white;padding:22px;text-align:center}
-header h1{font-family:Georgia,serif;font-size:30px;margin:5px}
-header p{color:#d2b477;letter-spacing:4px}
-nav{background:#263c30;padding:15px;text-align:center}
-nav a{color:white;text-decoration:none;margin:12px;font-size:14px}
-.hero{padding:100px 20px;text-align:center;background:linear-gradient(135deg,#263c30,#927e5c);color:white}
-.hero h2{font:48px Georgia;margin:10px}
-.hero p{font-size:18px}
-.btn{display:inline-block;background:#d2b477;color:#17271f;padding:14px 24px;margin:10px;text-decoration:none;font-weight:bold;border-radius:4px}
-section{padding:60px 7%;text-align:center}
-h2{font:36px Georgia}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.card{background:white;padding:30px;border:1px solid #e2d7c3;border-radius:5px}
-.card h3{font:23px Georgia;color:#927345}
-.about{background:#e9e1d3}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
-.photo{
-height:260px;
-position:relative;
-overflow:hidden;
-display:flex;
-align-items:end;
-justify-content:center;
-padding:20px;
-color:white;
-font:23px Georgia;
-border-radius:7px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.photo img{
-position:absolute;
-width:300%;
-height:200%;
-max-width:none;
-object-fit:fill;
+
+html {
+  scroll-behavior: smooth;
 }
-.photo:nth-child(1) img{left:0;top:0}
-.photo:nth-child(2) img{left:-100%;top:0}
-.photo:nth-child(3) img{left:-200%;top:0}
-.photo:nth-child(4) img{left:0;top:-100%}
-.photo:nth-child(5) img{left:-100%;top:-100%}
-.photo:nth-child(6) img{left:-200%;top:-100%}
-.photo span{
-position:relative;
-z-index:1;
-background:#17271fbb;
-padding:8px 14px;
-border-radius:5px;
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f0e5;
+  color: #17291f;
+  line-height: 1.6;
 }
-.contact{background:#17271f;color:white}
-.contact p{font-size:17px}
-.whatsapp-btn{background:#25D366;color:white}
-.call-btn{background:#d2b477;color:#17271f}
-.floating-whatsapp{position:fixed;bottom:20px;right:18px;background:#25D366;color:white;text-decoration:none;padding:15px 20px;border-radius:40px;font-weight:bold;box-shadow:0 3px 12px #0005;z-index:999}
-footer{background:#101a15;color:white;text-align:center;padding:20px}
-@media(max-width:600px){
-.hero{padding:65px 15px}
-.hero h2{font-size:35px}
-nav a{display:inline-block;margin:7px}
-section{padding:45px 5%}
+
+:root {
+  --green: #10291e;
+  --green2: #1c3b2b;
+  --gold: #d7b568;
+  --cream: #f5f0e5;
+  --white: #fff;
+}
+
+header {
+  background: var(--green);
+  color: var(--gold);
+  padding: 18px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  border-bottom: 3px solid var(--gold);
+}
+
+.logo {
+  font-family: Georgia, serif;
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.logo small {
+  display: block;
+  font-size: 15px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+.header-phone {
+  color: var(--gold);
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.hero {
+  min-height: 390px;
+  display: flex;
+  align-items: center;
+  padding: 55px 7%;
+  color: white;
+  background:
+    linear-gradient(90deg, rgba(9,25,17,.92), rgba(9,25,17,.25)),
+    url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=85") center/cover;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.hero h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(38px, 6vw, 65px);
+  line-height: 1.08;
+  margin-bottom: 18px;
+}
+
+.hero h1 span {
+  color: var(--gold);
+}
+
+.hero p {
+  font-size: 19px;
+  margin-bottom: 25px;
+}
+
+.button {
+  display: inline-block;
+  padding: 13px 23px;
+  margin: 5px 7px 5px 0;
+  background: var(--gold);
+  color: var(--green);
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  border: 1px solid var(--gold);
+}
+
+.button.outline {
+  background: transparent;
+  color: white;
+}
+
+.button:hover {
+  opacity: .85;
+}
+
+section {
+  padding: 55px 6%;
+}
+
+.section-title {
+  text-align: center;
+  font: bold 36px Georgia, serif;
+  margin-bottom: 30px;
+  color: var(--green);
+}
+
+.section-title:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: var(--gold);
+  margin: 12px auto;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.service {
+  background: white;
+  border: 1px solid #d8c69f;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px #00000012;
+}
+
+.service img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.service h3 {
+  background: var(--green);
+  color: var(--gold);
+  text-align: center;
+  padding: 13px;
+  font: bold 21px Georgia, serif;
+}
+
+.service p {
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.about {
+  background: #e9dfcc;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 35px;
+}
+
+.about h2 {
+  font: bold 38px Georgia, serif;
+  color: var(--green);
+  margin-bottom: 15px;
+}
+
+.about p {
+  font-size: 17px;
+}
+
+.about img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.features span {
+  color: var(--green);
+}
+
+.gallery-section {
+  background: var(--green);
+  color: white;
+}
+
+.gallery-section .section-title {
+  color: var(--gold);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.work {
+  background: #1b3829;
+  border: 1px solid var(--gold);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.work h3 {
+  text-align: center;
+  padding: 13px;
+  color: var(--gold);
+  font: bold 23px Georgia, serif;
+}
+
+.comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+}
+
+.comparison figure {
+  position: relative;
+  min-width: 0;
+}
+
+.comparison img {
+  display: block;
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.comparison figcaption {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  background: var(--green);
+  color: var(--gold);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.contact {
+  background: #e9dfcc;
+  text-align: center;
+}
+
+.contact h2 {
+  font: bold 36px Georgia, serif;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  margin: 9px;
+  font-size: 17px;
+}
+
+.contact .button {
+  margin-top: 20px;
+}
+
+.map-button {
+  background: var(--green);
+  color: var(--gold);
+}
+
+footer {
+  background: #0b1d14;
+  color: white;
+  text-align: center;
+  padding: 23px;
+  border-top: 3px solid var(--gold);
+}
+
+footer span {
+  color: var(--gold);
+}
+
+.floating-whatsapp {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 10;
+  background: #20bd5a;
+  color: white;
+  text-decoration: none;
+  padding: 14px 18px;
+  border-radius: 40px;
+  font-weight: bold;
+  box-shadow: 0 3px 12px #0005;
+}
+
+@media (max-width: 800px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    width: 100%;
+    gap: 13px;
+  }
+
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 40px 5%;
+  }
+
+  .hero {
+    min-height: 340px;
+    padding: 40px 6%;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .service img {
+    height: 210px;
+  }
+
+  .comparison img {
+    height: 145px;
+  }
+
+  .section-title {
+    font-size: 29px;
+  }
+
+  .about h2 {
+    font-size: 30px;
+  }
+
+  .header-phone {
+    font-size: 16px;
+  }
 }
 </style>
 </head>
+
 <body>
+
 <header>
-<h1>YAZICIOĞLU</h1>
-<p>LAKE & CİLA</p>
+  <div class="logo">
+    YAZICIOĞLU
+    <small>LAKE & CİLA</small>
+  </div>
+
+  <nav>
+    <a href="#anasayfa">Ana Sayfa</a>
+    <a href="#hizmetler">Hizmetlerimiz</a>
+    <a href="#hakkimizda">Hakkımızda</a>
+    <a href="#calismalar">Çalışmalarımız</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
+
+  <a class="header-phone" href="tel:+905415494599">
+    ☎ 0541 549 45 99
+  </a>
 </header>
-<nav>
-<a href="#hizmetler">Hizmetler</a>
-<a href="#hakkimizda">Hakkımızda</a>
-<a href="#calismalar">Çalışmalar</a>
-<a href="#iletisim">İletişim</a>
-</nav>
-<div class="hero">
-<h2>Mobilyalarınıza Yeni Bir Hayat</h2>
-<p>Ankara'da profesyonel mobilya boyama, kapı boyama ve lake uygulamaları.</p>
-<a class="btn" href="#hizmetler">Hizmetlerimizi Gör</a>
-<a class="btn" href="#iletisim">Bize Ulaşın</a>
+
+<main>
+
+<div class="hero" id="anasayfa">
+  <div class="hero-content">
+    <h1>
+      Mobilyalarınıza<br>
+      <span>Yeni Bir Hayat</span>
+    </h1>
+
+    <p>
+      Ankara'da profesyonel mobilya boyama,
+      kapı boyama ve lake uygulamaları.
+    </p>
+
+    <a class="button" href="tel:+905415494599">
+      ☎ Hemen Ara
+    </a>
+
+    <a class="button outline"
+       href="https://wa.me/905415494599">
+      WhatsApp'tan Yaz
+    </a>
+  </div>
 </div>
+
 <section id="hizmetler">
-<h2>Hizmetlerimiz</h2>
-<div class="cards">
-<div class="card"><h3>Kapı Boyama</h3><p>İç kapı boyama ve yenileme uygulamaları.</p></div>
-<div class="card"><h3>Mutfak Boyama</h3><p>Mutfak dolaplarına yepyeni görünüm.</p></div>
-<div class="card"><h3>Lake Boya</h3><p>Özenli lake boya ve yüzey işlemleri.</p></div>
-<div class="card"><h3>Mobilya Boyama</h3><p>Eski mobilyalarınızı yeniliyoruz.</p></div>
-<div class="card"><h3>Cila ve Vernik</h3><p>Ahşap yüzeylerde cila uygulamaları.</p></div>
-<div class="card"><h3>Varaklı Koltuk</h3><p>Klasik mobilya ve varak yenileme işleri.</p></div>
-</div>
+  <h2 class="section-title">Hizmetlerimiz</h2>
+
+  <div class="services">
+
+    <article class="service">
+      <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=85" alt="Kapı boyama">
+      <h3>Kapı Boyama</h3>
+      <p>Eski iç kapılarınızı yenileyerek modern ve temiz bir görünüm kazandırıyoruz.</p>
+    </article>
+
+    <article class="service">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=85" alt="Mutfak boyama">
+      <h3>Mutfak Boyama</h3>
+      <p>Mutfak dolaplarınızı özenli boya uygulamalarıyla yeniliyoruz.</p>
+    </article>
+
+    <article class="service">
+      <img src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=800&q=85" alt="Lake uygulama">
+      <h3>Lake Uygulama</h3>
+      <p>Lake boya ve pürüzsüz yüzey uygulamaları.</p>
+    </article>
+
+    <article class="service">
+      <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=85" alt="Mobilya yenileme">
+      <h3>Mobilya Yenileme</h3>
+      <p>Eski mobilyalarınızı yeniden değerlendiriyoruz.</p>
+    </article>
+
+    <article class="service">
+      <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=800&q=85" alt="Yemek odası">
+      <h3>Yemek Odası</h3>
+      <p>Yemek odası takımlarına boya ve yenileme işlemleri.</p>
+    </article>
+
+    <article class="service">
+      <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=85" alt="Ahşap cila">
+      <h3>Cila İşleri</h3>
+      <p>Ahşap yüzeylere cila ve vernik uygulamaları.</p>
+    </article>
+
+  </div>
 </section>
+
 <section class="about" id="hakkimizda">
-<h2>Yazıcıoğlu Lake & Cila</h2>
-<p>Mobilya boya ustalığında titiz işçilik, kaliteli uygulama ve müşteri memnuniyeti.</p>
+
+  <div>
+    <h2>Yazıcıoğlu Lake & Cila</h2>
+
+    <p>
+      Mobilya boya ustalığında titiz işçilik,
+      kaliteli uygulama ve müşteri memnuniyeti
+      ile hizmetinizdeyiz.
+    </p>
+
+    <div class="features">
+      <span>✓ Profesyonel İşçilik</span>
+      <span>✓ Kaliteli Malzeme</span>
+      <span>✓ Özenli Uygulama</span>
+    </div>
+
+    <a class="button" href="#iletisim">
+      Bizimle İletişime Geçin
+    </a>
+  </div>
+
+  <img
+    src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1000&q=85"
+    alt="Mobilya boyama ve yenileme işçiliği">
 </section>
-<section id="calismalar">
-<h2>Çalışmalarımız</h2>
-<div class="gallery">
-<div class="photo"><img src="file_00000000968481f4b070fde3f60b2b0b.png" alt="Kapı Boyama"><span>Kapı Boyama</span></div>
-<div class="photo"><img src="file_00000000968481f4b070fde3f60b2b0b.png" alt="Mutfak Boyama"><span>Mutfak Boyama</span></div>
-<div class="photo"><img src="file_00000000968481f4b070fde3f60b2b0b.png" alt="Lake Uygulama"><span>Lake Uygulama</span></div>
-<div class="photo"><img src="file_00000000968481f4b070fde3f60b2b0b.png" alt="Mobilya Yenileme"><span>Mobilya Yenileme</span></div>
-<div class="photo"><img src="file_00000000968481f4b070fde3f60b2b0b.png" alt="Yemek Odası"><span>Yemek Odası</span></div>
-<div class="photo"><img src="file_00000000968481f4b070fde3f60b2b0b.png" alt="Cila İşleri"><span>Cila İşleri</span></div>
-</div>
+
+<section class="gallery-section" id="calismalar">
+  <h2 class="section-title">Çalışmalarımız</h2>
+
+  <div class="gallery">
+
+    <article class="work">
+      <h3>Kapı Boyama</h3>
+      <div class="comparison">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=700&q=85" alt="Kapı boyama öncesi">
+          <figcaption>ÖNCESİ</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=700&q=85" alt="Kapı boyama sonrası">
+          <figcaption>SONRASI</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="work">
+      <h3>Mutfak Boyama</h3>
+      <div class="comparison">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=700&q=85" alt="Mutfak boyama öncesi">
+          <figcaption>ÖNCESİ</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=85" alt="Mutfak boyama sonrası">
+          <figcaption>SONRASI</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="work">
+      <h3>Lake Uygulama</h3>
+      <div class="comparison">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1598300056393-4aac492f4344?auto=format&fit=crop&w=700&q=85" alt="Lake mobilya öncesi">
+          <figcaption>ÖNCESİ</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=700&q=85" alt="Lake mobilya sonrası">
+          <figcaption>SONRASI</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="work">
+      <h3>Mobilya Yenileme</h3>
+      <div class="comparison">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=85" alt="Mobilya yenileme öncesi">
+          <figcaption>ÖNCESİ</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=700&q=85" alt="Mobilya yenileme sonrası">
+          <figcaption>SONRASI</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="work">
+      <h3>Yemek Odası</h3>
+      <div class="comparison">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=700&q=85" alt="Yemek odası öncesi">
+          <figcaption>ÖNCESİ</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=700&q=85" alt="Yemek odası sonrası">
+          <figcaption>SONRASI</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="work">
+      <h3>Cila İşleri</h3>
+      <div class="comparison">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=700&q=85" alt="Cila öncesi">
+          <figcaption>ÖNCESİ</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=700&q=85" alt="Cila sonrası">
+          <figcaption>SONRASI</figcaption>
+        </figure>
+      </div>
+    </article>
+
+  </div>
 </section>
+
 <section class="contact" id="iletisim">
-<h2>İletişim ve Adres</h2>
-<p>Telefon: 0541 549 45 99</p>
-<p>Önder Mah. Tezcan Cad. 5/12</p>
-<p>Altındağ / Ankara</p>
-<a class="btn call-btn" href="tel:+905415494599">Hemen Ara</a>
-<a class="btn whatsapp-btn" href="https://wa.me/905415494599" target="_blank" rel="noopener">WhatsApp'tan Yaz</a>
-<br>
-<a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%C3%96nder+Mahallesi+Tezcan+Caddesi+5%2F12+Alt%C4%B1nda%C4%9F+Ankara">Konumu Haritada Gör</a>
+  <h2 class="section-title">İletişim ve Adres</h2>
+
+  <p><strong>Yazıcıoğlu Lake & Cila</strong></p>
+  <p>Önder Mah. Tezcan Cad. 5/12</p>
+  <p>Altındağ / Ankara</p>
+  <p>Telefon: <strong>0541 549 45 99</strong></p>
+
+  <a class="button" href="tel:+905415494599">
+    ☎ Hemen Ara
+  </a>
+
+  <a class="button" href="https://wa.me/905415494599">
+    WhatsApp'tan Yaz
+  </a>
+
+  <br>
+
+  <a class="button map-button"
+     target="_blank"
+     rel="noopener"
+     href="https://www.google.com/maps/search/?api=1&query=%C3%96nder+Mahallesi+Tezcan+Caddesi+5%2F12+Alt%C4%B1nda%C4%9F+Ankara">
+    Konumu Haritada Gör
+  </a>
 </section>
-<a class="floating-whatsapp" href="https://wa.me/905415494599" target="_blank" rel="noopener">WhatsApp</a>
-<footer>© 2026 Yazıcıoğlu Lake & Cila</footer>
+
+</main>
+
+<a class="floating-whatsapp"
+   href="https://wa.me/905415494599"
+   target="_blank"
+   rel="noopener">
+  WhatsApp
+</a>
+
+<footer>
+  © 2026 <span>Yazıcıoğlu Lake & Cila</span>.
+  Tüm Hakları Saklıdır.
+</footer>
+
 </body>
 </html>
